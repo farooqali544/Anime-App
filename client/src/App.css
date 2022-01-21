@@ -1,0 +1,144 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: #1A374D;
+  height: 80px;
+  /* width: 100vw; */
+display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+.search-page{
+  /* height: calc(100vh - 80px); */
+  /* background-color: #F5F5F5; */
+}
+
+.search-field{
+padding: 20px 40px;
+}
+
+.animes{
+  display: flex;
+  width: 80%;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+
+
+.pagination{
+  margin: auto;
+  width: 80%;
+list-style: none;
+display: flex;
+height: 40px;
+/* margin: 20px; */
+justify-content: end;
+align-items: center;
+}
+
+.pagination a{
+display: block;
+padding: 8px;
+border: 1px solid #1A374D;
+color: #1A374D;
+border-radius: 5px;
+margin: 8px;
+cursor: pointer;
+font-weight: 400;
+}
+
+.active-page a{
+  background-color: #1A374D;
+  color: whitesmoke;
+}
+
+.pagination a:hover{
+  background-color: #1a374dd7;
+}
+
+.anime{
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.anime .anime-details{
+  width: calc(100% - 225px);
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.anime-details .more-details{
+  margin-top: auto;
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+
+.more-details div{
+  width: 40%;
+  min-width: fit-content;
+  max-width: 150px;
+  padding: 15px 5px;
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+color: rgba(255, 255, 255, 0.932);
+border: 2px solid gray;
+}
+.more-details div h2{
+  font-weight: 800;
+}
+
+.more-details .episodes{
+  background-color: #2D4263;
+ 
+}
+
+.more-details .rank{
+  background-color: #345B63;
+  /* color: ; */
+}
+
+.more-details .popularity{
+  background-color: #152D35;
+}
+
+.more-details .members{
+  background-color: #112031;
+}
+
+@media(max-width:800px){
+  .anime{
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .anime .anime-details{
+    width: 100% !important;
+  }
+  .anime-details .more-details{
+    margin-top: 20px;
+  }
+}
